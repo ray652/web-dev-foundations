@@ -4,25 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS 練習</title>
-
-    <!-- 
-    步驟一：引入 Tailwind CSS
-    請將以下程式碼加入到 head 標籤中：
     <script src="https://cdn.tailwindcss.com"></script> 
 
-    步驟二：
-    1. 前往 Tailwind CSS 官方文件：https://tailwindcss.com/docs
-    2. 學習如何使用 Tailwind 的 utility classes
-    3. 透過添加適當的 class 來設計網頁樣式
-    -->
   </head>
   <body>
     <!-- 導航列 -->
-    <nav>
-      <div>
+    <nav class="px-6 py-4 border-b ab-12">
+      <div class="flex justify-between items-center">
         <img src="https://placehold.jp/100x50.png" alt="Logo" />
-        <ul>
-          <li><a href="#">首頁</a></li>
+        <ul class="flex gap-x-4">
+          <li ><a href="#">首頁</a></li>
           <li><a href="#">關於我們</a></li>
           <li><a href="#">服務項目</a></li>
           <li><a href="#">聯絡資訊</a></li>
@@ -33,7 +24,7 @@
     <!-- 首頁橫幅 -->
     <header>
       <h1>探索 Tailwind CSS 的魅力</h1>
-      <p>透過實作學習現代化的 CSS 框架</p>
+      <p id="landing" class="strong">透過實作學習現代化的 CSS 框架</p>
       <div>
         <button>開始學習</button>
         <button>觀看教學</button>
@@ -49,7 +40,7 @@
           <div>
             <img src="https://placehold.jp/150x150.png" alt="圖示 1" />
             <h3>快速開發</h3>
-            <p>使用 Utility-First 的方法，加速開發流程</p>
+            <p id="landing-2" class="strong">使用 Utility-First 的方法，加速開發流程</p>
           </div>
           <div>
             <img src="https://placehold.jp/150x150.png" alt="圖示 2" />
@@ -59,7 +50,7 @@
           <div>
             <img src="https://placehold.jp/150x150.png" alt="圖示 3" />
             <h3>客製化設計</h3>
-            <p>依據需求打造獨特的使用者介面</p>
+            <p class="strong">依據需求打造獨特的使用者介面</p>
           </div>
         </div>
       </section>
